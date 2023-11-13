@@ -15,7 +15,7 @@ pipeline {
                  retry 3
             }
             steps {
-                echo "Deploying to master"
+                echoo "Deploying to master"
             }
         }
     }
