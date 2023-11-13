@@ -12,7 +12,7 @@ pipeline {
                 branch 'testing'
             }
             options {
-                quietPeriod 30
+                 retry 3
             }
             steps {
                 echo "Deploying to ${deployEnv}"
