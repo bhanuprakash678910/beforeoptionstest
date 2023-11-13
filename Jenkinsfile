@@ -15,7 +15,7 @@ pipeline {
                  retry 3
             }
             steps {
-                echo "Deploying to ${deployEnv}"
+                echo "Deploying to master"
             }
         }
     }
