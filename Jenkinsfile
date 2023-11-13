@@ -12,7 +12,7 @@ pipeline {
                 branch 'testing'
             }
             options {
-                lock label: 'testing-deploy-envs', quantity: 1, variable: 'deployEnv'
+                quietPeriod 30
             }
             steps {
                 echo "Deploying to ${deployEnv}"
