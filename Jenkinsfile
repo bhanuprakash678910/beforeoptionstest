@@ -9,7 +9,7 @@ pipeline {
         stage('Example Deploy') {
             when {
                 beforeOptions true
-                branch 'testing'
+                branch 'master'
             }
             options {
                  retry 3
